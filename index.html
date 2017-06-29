@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Psychic game</title>
+</head>
+<body>
+    <h1>Psychic Game. Take a guess.</h1>
+    <div id="form">
+        <p>Guess what letter I'm thinking of (from a to f). You have 3 tries.</p>
+        <input type="text" id="guessInput" placeholder=" Guess a letter from a to f ">
+        <br>
+        <br>
+        <button onclick="checkLetter()">Guess</button>
+        <button onclick="reset()">Reset</button>    
+    </div>
+    <div id="content">
+        <h2>Your current status</h2>
+        <output id="status_output">You have yet to guess anything.</output> 
+        <br>
+        <output>Your guess so far: </output>
+        <output id="status_guessed"></output>
+         <br>
+        <output>Wins: </output>
+        <output id="wins"></output>   
+        <br>
+        <output>Looses: </output>
+        <output id="looses"></output>
+    </div> 
+    
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</body>
+</html>
